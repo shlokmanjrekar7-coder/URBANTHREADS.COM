@@ -1,0 +1,80 @@
+<html>
+<head>
+<title>Contact Us</title>
+<style>
+th
+{
+font-size: 22px
+}
+p
+{
+border:2px solid black;
+padding:25px;
+text-align:right;
+background-color:black;
+}
+#p2
+{
+font-size:20px;
+border:2px solid black;
+padding:25px;
+text-align:center;
+background-color:black;
+color:white;
+font-family:none;
+margin:50px 0px 0px 0px;
+max-width:none;
+}
+a
+{
+font-size:20px
+}
+img
+{
+float:left
+}
+</style>
+</head>
+<body>
+<p>
+<img src="urban.jpg" alt="My Image" width="49" height="49">
+<a href="projecthome.html" style="color:white" class="a">Home</a>
+<a href="projectproduct.html" style="color:white" class="a">Product</a>
+<a href="projectaboutus.html" style="color:white" class="a">About us</a>
+<a href="projectcontact.html" style="color:white" class="a">Contact</a>
+</p><br><br><br>
+<form onsubmit="display(event)">
+<center><table style="border: 1px solid black; width: 400px; height: 250px;">
+<tr>
+<th style="background-color: black; color: white" colspan="2">CONTACT US!</th>
+</tr>
+<tr>
+<th><input type="text" id="name" placeholder="Enter Name" required></th>
+</tr>
+<tr> 
+<th><input type="email" id="mail" placeholder="Enter Email" required></th> 
+</tr>
+<tr>
+<th><input type="tel" id="num" maxlength="10" placeholder="Enter Contact no." required></th>
+</tr>
+<tr>
+<th><input type="text" id="pr" placeholder="Reason for contact" required></th></th>
+</tr>
+<tr>
+<th colspan="2"><input type="submit" value="Submit"></th>
+</tr>
+</table></center>
+</form>
+<div id="message" style="text-align:center; color:green; margin-top:20px;"></div>
+<script>
+function display(event)
+{
+event.preventDefault();
+document.getElementById("message").innerHTML = "Thanks for contacting us! We will reach you soon.";
+}
+</script>
+</body>
+<footer>
+    <p id="p2">© 2025 Urban Threads. All Rights Reserved.</p>
+</footer>
+</html>
